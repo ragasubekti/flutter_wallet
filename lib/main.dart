@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_wallet/config/routes.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,10 +8,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Wallet',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(),
+      theme: ThemeData(fontFamily: 'Psans'),
+      initialRoute: '/',
+      routes: routes,
     );
   }
 }
